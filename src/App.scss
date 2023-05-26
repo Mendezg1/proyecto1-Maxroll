@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.carousel{
+    position: absolute;
+    left: -532px;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-wrap{
+    width: 100%;
+    height: 75px;
+    background-color: rgba($color: #0000, $alpha: 0.8);
+    display: flex;
+    flex-direction: row;
+    .logo{
+        width: 200px;
+        height: 50px;
+        background-image: url('../public/maxroll-logo.png');
+        background-color: transparent;
+        border: none;
+        position: relative;
+        left: 143px;
+        top: 11px;
+        cursor: pointer;
+    }
+}
+
+
+
+.top-right-wrap{
+    position: relative;
+    left: 798px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    width: 340px;
+    top: 8px;
+
+    .top-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #ffff;
+        cursor: pointer;
+        width: 100px;
+        height: 74px;
+        margin-top: -6px;
+        text-decoration: none;
+    }
+    
+    .top-holder:hover{
+        background-color: rgba($color: #6D6969, $alpha: 0.3);
+    }
+    
+    .top-holder-1:hover{
+        background-color: rgba($color: #6D6969, $alpha: 0.3);
+    }
+    
+    .top-holder-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #ffff;
+        cursor: pointer;
+        margin-top: -6px;
+        width: 100px;
+        height: 74px;
+        
+        .opener{
+            margin-top: 30px;
+            margin-left: 5px;
+            color: #0579EF;
+            font-size: 25px;
+            transition-duration: 0.6s;
+        }
+        .opener.rotar{
+            position: relative;
+            top: -5px;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.mid-upper-wrap{
+    height: 3390px;
+    .select{
+        color: #0579EF;
+        position: relative;
+        font-family:  sans-serif;
+        font-style: normal;
+        font-size: 45px;
+        font-weight: 100;
+        top: 510px;
+        left: 148px;
+    }
+    
+    .hp{
+        color: #0579EF;
+        position: relative;
+        font-family:  sans-serif;
+        font-style: normal;
+        font-size: 45px;
+        font-weight: 100;
+        top: 1000px;
+        left: 148px;
+    }
+    
+    .header-tab, .container{
+        position: relative;
+        top: 1055px;
+    }
+    
+    .container1{
+        position: relative;
+        top: 595px;
+    }
+    .container2{
+        position: relative;
+        top: 135px;
+    }
+    .container3{
+        position: relative;
+        top: -325px;
+    }
+    
+    .container4{
+        position: relative;
+        top: -785px;
+    }
+    .container5{
+        position: relative;
+        top: -1245px;
+    }
+    .container6{
+        position: relative;
+        top: -1705px;
+    }
+    
+    .container,.container1,.container2,.container3,.container4,.container5,.container6{
+        visibility: hidden;
+    }
+    
+    
+    
+    .bloc-tabs{
+        position: relative;
+        left: 130px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    
+    .tabs{
+        background-color: #151515;
+        color: #ffff;
+        text-align: center;
+        justify-content: center;
+        width: 50%;
+        height: 65px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+        box-sizing: content-box;
+        position: relative;
+        outline: none;
+        font-family:  sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        border: transparent;
+    }
+    .tabs:hover{
+        color: #0579EF;
+    }
+    .tabs.active{
+        background-color: #3F3F3F;
+    }
+    
+    .container.shown, .container1.shown,.container2.shown,.container3.shown,.container4.shown
+    ,.container5.shown,.container6.shown{
+        visibility: visible;
+    }
+    
+    .connect{
+        position: relative;
+        top: -1960px;
+        width: 290px;
+        height: 65px;
+        left: 40%;
+        background-color: #0579EF;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        .conect-text{
+            color: #ffff;
+            position: relative;
+            top: 18px;
+            font-family:  sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 26px;
+        }
+    }
+    
+    .socials-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: #111111;
+        top: -1622px;
+        width: 100%;
+        height: 280px;
+        .twitch, .twitter, .YT, .IG, .disc{
+            cursor: pointer;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border: transparent;
+        }
+        .twitch{
+            background-image: url("../public/tuich.png");
+            top: 88px;
+            left: 142px;
+        }
+        .twitter{
+            background-image: url("../public/twitter.png");
+            top: 93px;
+            left: 320px;
+        }
+        .YT{
+            background-image: url("../public/yt.png");
+            top: 81px;
+            left: 490px;
+        }
+        .IG{
+            background-image: url("../public/ig.png");
+            left: 677px;
+            top: 75px;
+        }
+        .disc{
+            background-image: url("../public/disc.png");
+            left: 865px;
+            top: 78px;
+        }
+    }
+    
+    .teams-container{
+        position: relative;
+        top: -1755px;
+        width: auto;
+        height: 835px;
+        background-image: url("../public/fondo-teams.PNG");
+        .teams-text{
+            color: #0579EF;
+            position: relative;
+            left: 140px;
+            top: 30px;
+            font-family:  sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 56px;
+        }
+    }
+}
+
+.bottom{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url('../public/fondom.PNG');
+    top: 80px;
+
+    .bottom-max{
+        position: relative;
+        top: 70px;
+        left: 320px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .bottom-socials{
+        position: relative;
+        top: 150px;
+        left: 100px;
+        width: 578px;
+        height:105px;
+        background-image: url('../public/socials.png');
+    }
+
+    .socials-refs{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 590px;
+        left: 111px;
+        top: 95px;
+        justify-content: space-evenly;
+        .social-ref{
+            width: 66px;
+            height: 60px;
+            margin-left: 40px;
+        }
+    }
+
+    .bottom-texts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+        width: 800px;
+        left: 710px;
+        top: -300px;
+        .links, .bottom-text-games{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .bottom-ttl{
+            color: #0579EF;
+            position: relative;
+            font-family:  sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 26px;
+        }
+        .bottom-txt{
+            color: #9B9B9B;
+            position: relative;
+            text-decoration: none;
+            font-family:  sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 24px;
+            top: -35px;
+            margin-top: 15px;
+        }
+        .bottom-txt:hover{
+            color: #0579EF;
+        }
+    }
+}
+

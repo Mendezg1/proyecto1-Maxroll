@@ -1,0 +1,65 @@
+
+.card-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 110px;
+    margin-left: 22px;
+    margin-top: 50px;
+    background-color: #151515;
+    width: 279px;
+    height: 410px;
+    text-decoration: none;
+    .card-img{
+        width: auto;
+        height: 65%;
+    }
+    .card-title{
+        top: -10px;
+        left: 10px;
+        font-size: 24px;
+        color: #ffff;
+        padding: 8px;
+    }
+    .card-author{
+        margin-left: 5px;
+    }
+    .card-update{
+        position: relative;
+        font-size: 15px;
+        top: -72px;
+        left: 10px;
+    }
+    .optional-season{
+        position: relative;
+        top: -100px;
+        left: 10px;
+        font-family:  sans-serif;
+        font-style: normal;
+    }
+    .card-author,.optional-season{
+        color: #0579EF;
+    }
+    .card-update, .optional-season,.by{
+        text-align: left;
+    }
+    .card-update,.by{
+        color: #8F8F8F;
+    }
+    .card-title, .card-author, .card-update,.by{
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+    }
+    .by-group{
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        position: relative;
+        top: -42px;
+        left: 10px;
+    }
+}
+
+.card-content:hover{
+    border: 1px solid #4091E3;
+}

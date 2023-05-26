@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+.car-container{
+    display: flex;
+    flex-direction: row;
+}
+.car-title{
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f7f7ff;
+    position: relative;
+    text-shadow: 1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+    
+    top: -138px;
+    left: 675px;
+}
+.car-date{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f7f7ff;
+    position: relative;
+    text-shadow: 1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+    
+    top: -164px;
+    left: 675px;
+}
+.maxroll-text{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #057AF0;
+    position: relative;
+    text-shadow: 1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+    
+    top: -200px;
+    left: 830px;
+}

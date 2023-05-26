@@ -11,7 +11,7 @@ const Game = ({link,img,title,name0,name1,name2,name3,name4,name5,name6,name7,na
                     <img src={img} className="teams-img" ></img>
                 </a>
             </div>
-            <div className="teams-game-hover" id={id}>
+            <div className="teams-game-hover" id={id1}>
                 <a href={link} style={{textDecoration: 'none'}}>
                     <h3 className="teams-title">{title}</h3>
                     <p className="separator">__</p>

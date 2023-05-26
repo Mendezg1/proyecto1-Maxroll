@@ -3,12 +3,36 @@
 .carousel{
     position: absolute;
     left: -532px;
-    z-index: -1;
+    top: 0px;
     display: flex;
     flex-direction: row;
+    .carousel-buttons{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        left: -12280px;
+        .bt{
+            cursor: pointer;
+            position: absolute;
+            z-index: 1000;
+            top: 75px;
+            left: 650px;
+            width: 40px;
+            height: 5px;
+            background-color: #848589;
+            margin-left: 5px;
+            border: none;
+        }
+        .bt.blued{
+            background-color: #0579EF;
+        }
+    }
 }
 
 .top-wrap{
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
     width: 100%;
     height: 75px;
     background-color: rgba($color: #0000, $alpha: 0.8);

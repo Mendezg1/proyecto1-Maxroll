@@ -9,12 +9,18 @@ import { TeamsGames, TeamsHovers } from "./components/teamsGames"
 
 function App(){
 
-
+    window.onscroll = () =>{
+        const topbar = document.getElementById('topbar')
+        if(window.scrollY > 100){
+            topbar.style.position="fixed"
+            topbar.style.top=0
+        }
+    }
 
     const [opened, setOpened] = useState(false)
     const [index, setIndex] = useState(0)
     const [toggle, setToggle] = useState(1)
-    const [TeamGame, setTeamGame] = useState(0)
+    const [TeamGame, setTeamGame] = useState(1)
 
     const transitionConfig = (x) =>{
         x.style.transition="0.3s"
@@ -33,9 +39,10 @@ setInterval(() =>{
     const d4h = document.getElementById('D4H')
     const leh = document.getElementById('LEH')
     const lah = document.getElementById('LAH')
-    const tlih = document.getElementById('POEH')
-    const  poeh= document.getElementById('TLIH')
+    const poeh = document.getElementById('POEH')
+    const  tlih= document.getElementById('TLIH')
     if(d3 != null && d2 != null && d4 != null && le != null && la != null && tli != null && poe != null){
+        console.log(TeamGame)
         transitionConfig(d3)
         transitionConfig(d2)
         transitionConfig(d4)
@@ -44,37 +51,148 @@ setInterval(() =>{
         transitionConfig(tli)
         transitionConfig(poe)
         switch(TeamGame){
+            case 0:
+                tli.style.transition = "0s"
+                poe.style.transition = "0s"
+                d2.style.left="40px"
+                d3.style.left="40px"
+                d4.style.left="40px"
+                le.style.left="40px"
+                la.style.left="40px"
+                poe.style.left="40px"
+                tli.style.left="40px"
+                d2h.style.left="76px"
+                d3h.style.left="76px"
+                d4h.style.left="76px"
+                leh.style.left="76px"
+                lah.style.left="76px"
+                poeh.style.left="76px"
+                tlih.style.left="76px"
+            break
             case 1:
-                d4.style.left='-426px'
+                d3.style.left="40px"
+                d3h.style.left="76px"
+
+                d4.style.left='-380px'
+                le.style.left="-380px"
+                la.style.left="-380px"
+                d2.style.left="-380px"
+                poe.style.left="-380px"
+                d4h.style.left="-360px"
+                d2h.style.left="-360px"
+                leh.style.left="-360px"
+                lah.style.left="-360px"
+                poeh.style.left="-360px"
             break
 
             case 2:
+                d3.style.transition="0s"
+                d3.style.left="2180px"
+                d3h.style.left="2200px"
+
+                le.style.left="-760px"
+                la.style.left="-760px"
+                d2.style.left="-760px"
+                poe.style.left="-760px"
+                tli.style.left="-760px"
+                d2h.style.left="-730px"
+                leh.style.left="-730px"
+                lah.style.left="-730px"
+                poeh.style.left="-730px"
+                tlih.style.left="-730px"
+
+                
             break
 
             case 3:
+                d4.style.transition="0s"
+                d4.style.left="1800px"
+                d4h.style.left="1820px"
+                le.style.transition="0s"
+                le.style.left="1800px"
+                leh.style.left="1820px"
+
+                la.style.left="-1180px"
+                d2.style.left="-1180px"
+                poe.style.left="-1180px"
+                tli.style.left="-1180px"
+                d3.style.left="1760px"
+                lah.style.left="-1160px"
+                d2h.style.left="-1160px"
+                poeh.style.left="-1160px"
+                tlih.style.left="-1160px"
+                d3h.style.left="1800px"
+
+                
             break
 
             case 4:
+                la.style.transition="0s"
+                la.style.left="1800px"
+                lah.style.left="1820px"
+
+                d2.style.left="-1600px"
+                poe.style.left="-1600px"
+                tli.style.left="-1600px"
+                d3.style.left="1340px"
+                d4.style.left="1340px"
+                d2h.style.left="-1580px"
+                poeh.style.left="-1580px"
+                tlih.style.left="-1580px"
+                d3h.style.left="1350px"
+                d4h.style.left="1370px"
+
+                
+
             break
 
             case 5:
+                d2.style.transition="0s"
+                d2.style.left="1800px"
+                d2.style.left="1820px"
+
+                poe.style.left="-2050px"
+                tli.style.left="-2050px"
+                d3.style.left="900px"
+                d4.style.left="900px"
+                le.style.left="900px"
+                poeh.style.left="-2020px"
+                tlih.style.left="-2020px"
+                d3h.style.left="930px"
+                d4h.style.left="930px"
+                leh.style.left="930px"
+
+                
+                
             break
 
             case 6:
+                tli.style.left="-2440px"
+                d3.style.left="490px"
+                d4.style.left="490px"
+                le.style.left="490px"
+                la.style.left="490px"
+                tlih.style.left="-2400px"
+                d3h.style.left="510px"
+                d4h.style.left="510px"
+                leh.style.left="510px"
+                lah.style.left="510px"
+
             break
         }
     }
-    setIndex(index + 1)
-},5000)
+    if(TeamGame < 6)
+        setTeamGame(TeamGame+1)
+    else setTeamGame(0)
+},25000)
 
     const rotateOpener = () =>{
         setOpened(!opened)
         let arrow = document.getElementById('opener')
         arrow.classList.toggle("rotar")
     }
-
-   /**
-    *  setInterval(() =>{
+    
+ setInterval(() =>{
         const carousel = document.getElementById('car-container')
         if(carousel != null){
             console.log(index)
@@ -91,7 +209,6 @@ setInterval(() =>{
                 
         }
     }, 7000)
-    */
 
     
     return(
@@ -100,7 +217,7 @@ setInterval(() =>{
                 <div className="carousel">
                     <CarouselContent/>
                 </div>
-                <div className="top-wrap">
+                <div className="top-wrap" id="topbar">
                     <a href="https://maxroll.gg">
                         <button className="logo"></button>
                     </a>

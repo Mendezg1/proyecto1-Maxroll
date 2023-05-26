@@ -16,6 +16,7 @@
     "webpack-dev-server": "^4.15.0"
   },
   "scripts": {
-    "start": "webpack serve --mode=development"
+    "start": "webpack serve --mode=development",
+    "build": "vite build"
   }
 }

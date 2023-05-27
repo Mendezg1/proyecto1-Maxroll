@@ -5,8 +5,9 @@ import './index.scss'
 
 // Used hydrateRoot instead of render() for SSR
 
-ReactDOM.hydrateRoot(document.getElementById('root'),
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  )
+ReactDOM.hydrateRoot(
+  document.getElementById('root'),
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)

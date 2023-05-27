@@ -10,16 +10,16 @@ Se utilizó el manejador de archivos [npm](https://docs.npmjs.com/getting-starte
 npm install
 ```
 
-##Uso
+## Uso
 Para iniciar el proyecto en un servidor [local](http://localhost:3000/), utilizar el comando:
 ```bash
 npm start
 ```
 ## Tecnologías
 ### Estilos:
-  [Sass](https://sass-lang.com).
+  <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="30px">[Sass](https://sass-lang.com).
 ### Front End:
-  [React.js](https://react.dev).
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" width="30px">[React.js](https://react.dev).
 ### Lenguajes: 
-  [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript).
+  <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" width="30px">[JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript).
 

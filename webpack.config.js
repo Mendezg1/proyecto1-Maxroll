@@ -19,6 +19,19 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: ['style-loader','css-loader','sass-loader']
+      },{
+        test: /\.html$/,
+        use: 'html-loader',
+      },
+      // Regla para cargar archivos EJS con ejs-loader
+      {
+        test: /\.ejs$/,
+        use: {
+          loader: 'ejs-loader',
+          options: {
+            esModule: false,
+          },
+        },
       }
     ],
   },

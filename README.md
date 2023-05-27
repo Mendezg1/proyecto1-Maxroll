@@ -23,3 +23,12 @@ npm start
 ### Lenguajes: 
   <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" width="50px"> [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
+## Estructura
+En este repositorio podrá encontrar los siguientes directorios:<br>
+|--Public<br>
+|--src <br>
+&nbsp;&nbsp;&nbsp;|--components<br>
+
+- En el directorio Public, podrá encontrar algunos logos e imágenes utilizadas.
+- En src podrá encontrar todos los elementos del proyecto.
+  - En la carpeta components, podrá encontrar los componentes utilizados en App.js, los cuales contienen el código de varios elementos de la página web.

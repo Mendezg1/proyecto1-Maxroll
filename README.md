@@ -17,9 +17,9 @@ npm start
 ```
 ## Tecnologías
 ### Estilos:
-  <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="30px">[Sass](https://sass-lang.com).
+  <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="50px"> [Sass](https://sass-lang.com)
 ### Front End:
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" width="30px">[React.js](https://react.dev).
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" width="50px"> [React.js](https://react.dev)
 ### Lenguajes: 
-  <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" width="30px">[JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript).
+  <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" width="50px"> [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 

@@ -4,17 +4,6 @@
 Este proyecto intenta imitar la página web de [Maxroll](https://maxroll.gg) con todos sus componentes.
 El fin en mente del proyecto académico es poner en práctica los conocimientos de tecnologías web, no busca ser utilizado con malos fines.
 
-## Set Up
-Se utilizó el manejador de archivos [npm](https://docs.npmjs.com/getting-started) para instalar los módulos necesarios.
-```bash
-npm install
-```
-
-## Uso
-Para iniciar el proyecto en un servidor [local](http://localhost:3000/), utilizar el comando:
-```bash
-npm start
-```
 ## Tecnologías
 ### Estilos:
   <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="50px"> [Sass](https://sass-lang.com)
@@ -32,3 +21,16 @@ En este repositorio podrá encontrar los siguientes directorios:<br>
 - En el directorio Public, podrá encontrar algunos logos e imágenes utilizadas.
 - En src podrá encontrar todos los elementos del proyecto.
   - En la carpeta components, podrá encontrar los componentes utilizados en App.js, los cuales contienen el código de varios elementos de la página web.
+
+## Set Up
+Se utilizó el manejador de archivos [npm](https://docs.npmjs.com/getting-started) para instalar los módulos necesarios.
+```bash
+npm install
+```
+
+## Uso
+Para iniciar el proyecto en un servidor [local](http://localhost:3000/), utilizar el comando:
+```bash
+npm start
+```
+Tambien puedes ver la aplicación [aquí](https://mendezg1-maxroll-imitation.netlify.app).
